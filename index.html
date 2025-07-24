@@ -4,84 +4,140 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ZuuCaster IT Solutions - File Download</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f0f2f5;
             color: #333;
             margin: 0;
             padding: 20px;
         }
         h1 {
             color: #007BFF; /* ZuuCaster brand color */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .header-image {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #0056b3; /* Darker shade for section titles */
+            border-bottom: 2px solid #007BFF;
+            padding-bottom: 10px;
+            margin-top: 30px;
         }
         ul {
             list-style-type: none;
             padding: 0;
         }
         li {
-            margin: 10px 0;
+            margin: 15px 0;
         }
         a {
             text-decoration: none;
             color: #007BFF; /* ZuuCaster brand color */
-            font-weight: bold;
+            font-weight: 500;
+            padding: 12px 20px;
+            border: 2px solid #007BFF;
+            border-radius: 5px;
+            display: inline-block;
+            transition: background-color 0.3s, color 0.3s, border-color 0.3s, transform 0.3s;
         }
         a:hover {
-            text-decoration: underline;
-        }
-        footer {
-            margin-top: 20px;
-            font-size: 0.9em;
-            color: #666;
+            background-color: #007BFF;
+            color: white;
+            border-color: #0056b3;
+            transform: scale(1.05); /* Slightly enlarge on hover */
         }
         .attention {
-            color: red; /* Highlight attention message */
+            color: #d9534f; /* Bootstrap danger color */
             font-weight: bold;
+            margin: 20px 0;
+            text-align: center;
+            font-size: 1.1em;
+        }
+        footer {
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #666;
+            text-align: center;
+        }
+        .rental-tools {
+            background-color: #e9ecef;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .rental-tools ul {
+            padding-left: 20px;
+        }
+        .icon {
+            width: 20px;
+            height: 20px;
+            vertical-align: middle;
+            margin-right: 8px;
         }
     </style>
 </head>
 <body>
-    <h1>ZuuCaster IT Solutions - Download Your Files</h1>
-    <p>Welcome to the ZuuCaster file download portal. Click the links below to download the necessary files:</p>
-    
-    <h2>Downgraded Files (Single file will charge $1)</h2>
-    <ul>
-        <li><a href="https://drive.google.com/file/d/1AI9K4lYUU4XWwlM6FMgy19DQnMhkqlrk/view?usp=drive_link">Download RMX3943 - export_11_15.0.0.513EX01_2025020723550000_[ProjectNo_24723].zip</a></li>
-        <li><a href="https://drive.google.com/file/d/1GEfJ2-iwtft7zuOE-3o1y89qnhbKHW2i/view?usp=drive_link">Download RMX3951 - export_11_14.1.0.504EX01_2024090417080112_[ProjectNo_24690].zip</a></li>
-        <li><a href="https://drive.google.com/file/d/1AI9K4lYUU4XWwlM6FMgy19DQnMhkqlrk/view?usp=drive_link">Download RMX3997 - export_11_14.0.1.513EX01_2024061822260000.zip</a></li>
-        <li><a href="https://drive.google.com/file/d/1Jy9GlSWK1Fu1LSAtumUb2JLbso-7HEMz/view?usp=drive_link">Download RMX3999 - export_11_14.0.1.523(EX01)_2024091917430000_[ProjectNo_23701].zip</a></li>
-        <li><a href="https://drive.google.com/file/d/1AOeHW9dZhdvcrowwhWGV5kq4AAd0ZSVS/view?usp=drive_link">Download RMX3785 - export_11_14.0.0.115EX01_2024101515160118_[ProjectNo_23671]_2.zip</a></li>
-    </ul>
-    <p class="attention">Attention: Please make sure your PCB/project number is the same. Any issues will not be our responsibility in the future. All files have been 100% tested.</p>
+    <img src="https://via.placeholder.com/900x200.png?text=ZuuCaster+IT+Solutions" alt="ZuuCaster Header" class="header-image"> <!-- Replace with your image URL -->
+    <div class="container">
+        <h1>ZuuCaster IT Solutions - Download Your Files</h1>
+        <p>Welcome to the ZuuCaster file download portal. Click the links below to download the necessary files:</p>
+        
+        <h2>Downgraded Files (Single file will charge $1)</h2>
+        <ul>
+            <li><a href="https://drive.google.com/file/d/1AI9K4lYUU4XWwlM6FMgy19DQnMhkqlrk/view?usp=drive_link"><img src="https://img.icons8.com/ios-filled/20/007BFF/download.png" class="icon"/>Download RMX3943 - export_11_15.0.0.513EX01_2025020723550000_[ProjectNo_24723].zip</a></li>
+            <li><a href="https://drive.google.com/file/d/1GEfJ2-iwtft7zuOE-3o1y89qnhbKHW2i/view?usp=drive_link"><img src="https://img.icons8.com/ios-filled/20/007BFF/download.png" class="icon"/>Download RMX3951 - export_11_14.1.0.504EX01_2024090417080112_[ProjectNo_24690].zip</a></li>
+            <li><a href="https://drive.google.com/file/d/1AI9K4lYUU4XWwlM6FMgy19DQnMhkqlrk/view?usp=drive_link"><img src="https://img.icons8.com/ios-filled/20/007BFF/download.png" class="icon"/>Download RMX3997 - export_11_14.0.1.513EX01_2024061822260000.zip</a></li>
+            <li><a href="https://drive.google.com/file/d/1Jy9GlSWK1Fu1LSAtumUb2JLbso-7HEMz/view?usp=drive_link"><img src="https://img.icons8.com/ios-filled/20/007BFF/download.png" class="icon"/>Download RMX3999 - export_11_14.0.1.523(EX01)_2024091917430000_[ProjectNo_23701].zip</a></li>
+            <li><a href="https://drive.google.com/file/d/1AOeHW9dZhdvcrowwhWGV5kq4AAd0ZSVS/view?usp=drive_link"><img src="https://img.icons8.com/ios-filled/20/007BFF/download.png" class="icon"/>Download RMX3785 - export_11_14.0.0.115EX01_2024101515160118_[ProjectNo_23671]_2.zip</a></li>
+        </ul>
+        <p class="attention">Attention: Please make sure your PCB/project number is the same. Any issues will not be our responsibility in the future. All files have been 100% tested.</p>
 
-    <h2>Tool Auth Downgrade File</h2>
-    <ul>
-        <li><a href="https://drive.google.com/file/d/1DdQ0vPIy9YUP6brCqEOtZQde_8h7W7js/view?usp=drive_link">Download Driver Oppo</a></li>
-        <li><a href="https://drive.google.com/file/d/1uXZyjvfGgD1Z67W9G6CPg2G1RNQX6y72/view?usp=drive_link">Download libusb-win32-devel-filter-1.2.6.0.exe</a></li>
-        <li><a href="https://drive.google.com/file/d/1FWnu3IvZF-dD5WYAqE17Q9gdG6BBuiJN/view?usp=drive_link">Download Honor FRP Tool</a></li>
-        <li><a href="https://drive.google.com/file/d/1PLA-W_Wf8vbjeqbaLaZqjWsu7bwuexBB/view?usp=drive_link">Download VC_redist.x64.exe</a></li>
-    </ul>
+        <h2>Tool Auth Downgrade File</h2>
+        <ul>
+            <li><a href="https://drive.google.com/file/d/1DdQ0vPIy9YUP6brCqEOtZQde_8h7W7js/view?usp=drive_link"><img src="https://img.icons8.com/ios-filled/20/007BFF/download.png" class="icon"/>Download Driver Oppo</a></li>
+            <li><a href="https://drive.google.com/file/d/1uXZyjvfGgD1Z67W9G6CPg2G1RNQX6y72/view?usp=drive_link"><img src="https://img.icons8.com/ios-filled/20/007BFF/download.png" class="icon"/>Download libusb-win32-devel-filter-1.2.6.0.exe</a></li>
+            <li><a href="https://drive.google.com/file/d/1FWnu3IvZF-dD5WYAqE17Q9gdG6BBuiJN/view?usp=drive_link"><img src="https://img.icons8.com/ios-filled/20/007BFF/download.png" class="icon"/>Download Honor FRP Tool</a></li>
+            <li><a href="https://drive.google.com/file/d/1PLA-W_Wf8vbjeqbaLaZqjWsu7bwuexBB/view?usp=drive_link"><img src="https://img.icons8.com/ios-filled/20/007BFF/download.png" class="icon"/>Download VC_redist.x64.exe</a></li>
+            <li><a href="https://drive.google.com/file/d/1alD_2tg2CLr2esRxRDv_vV22xO6goLF0/view?usp=drive_link"><img src="https://img.icons8.com/ios-filled/20/007BFF/download.png" class="icon"/>Download Realme Driver</a></li>
+            <li><a href="https://mega.nz/file/evgVCBTK#NJFzRbnbeWbBCwfJAiKAi6amJ_sS_0Id5eVkQtJJbbw"><img src="https://img.icons8.com/ios-filled/20/007BFF/download.png" class="icon"/>Download USB Redirector 1.9.7</a></li>
+        </ul>
 
-    <h2>Special Tool VIP</h2>
-    <ul>
-        <li><a href="https://drive.google.com/file/d/1cUq6Lt_Y2o1yIN9xZ6rBKLHjkhbOgen_/view?usp=drive_link">Download Special Tool VIP</a></li>
-    </ul>
+        <h2>Special Tool VIP</h2>
+        <ul>
+            <li><a href="https://drive.google.com/file/d/1cUq6Lt_Y2o1yIN9xZ6rBKLHjkhbOgen_/view?usp=drive_link"><img src="https://img.icons8.com/ios-filled/20/007BFF/download.png" class="icon"/>Download Special Tool VIP</a></li>
+        </ul>
 
-    <h2>Tool Rental</h2>
-    <ul>
-        <li>UnlockTool</li>
-        <li>Pandora</li>
-        <li>TSM</li>
-        <li>Griffin</li>
-        <li>DFT</li>
-        <li>Sigma</li>
-        <li>CF Tool</li>
-    </ul>
+        <div class="rental-tools">
+            <h2>Tool Rental</h2>
+            <ul>
+                <li>UnlockTool</li>
+                <li>Pandora</li>
+                <li>TSM</li>
+                <li>Griffin</li>
+                <li>DFT</li>
+                <li>Sigma</li>
+                <li>CF Tool</li>
+            </ul>
+            <p>For any rental tool, please contact us directly via WhatsApp: <a href="https://wa.me/60178040403">Chat with us on WhatsApp</a></p>
+        </div>
 
-    <p>For any rental tool, please contact us directly via WhatsApp: <a href="https://wa.me/60178040403">Chat with us on WhatsApp</a></p>
-
-    <p>We will continue to add more files and resources here for your convenience.</p>
+        <p>We will continue to add more files and resources here for your convenience.</p>
+    </div>
     <footer>
         <p>&copy; 2023 ZuuCaster IT Solutions. All rights reserved.</p>
     </footer>
