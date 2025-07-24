@@ -5,20 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ZuuCaster IT Solutions - File Download Portal</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Font Awesome for icons -->
     <style>
         body {
             font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            background: #e9ecef; /* Light background color */
-            color: #343a40;
+            background: #f4f4f4; /* Light background color */
+            color: #333;
         }
         header {
             background: #007BFF; /* Header background color */
             color: white;
             padding: 20px;
             text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
         }
         h1 {
             margin: 0;
@@ -37,6 +37,7 @@
             border-bottom: 2px solid #007BFF;
             padding-bottom: 10px;
             margin-top: 30px;
+            font-size: 1.8em;
         }
         .card {
             background: #f8f9fa;
@@ -47,6 +48,10 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-2px);
         }
         .card a {
             text-decoration: none;
@@ -74,6 +79,9 @@
             font-size: 0.9em;
             color: #6c757d; /* Footer text color */
             text-align: center;
+            padding: 10px 0;
+            background: #f1f1f1;
+            border-top: 1px solid #e0e0e0;
         }
         .whatsapp-button {
             display: inline-block;
@@ -88,86 +96,103 @@
         .whatsapp-button:hover {
             background-color: #128C7E; /* Darker WhatsApp color on hover */
         }
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
+        }
     </style>
 </head>
 <body>
     <header>
         <h1>ZuuCaster IT Solutions</h1>
-        <p>Your one-stop solution for file downloads</p>
     </header>
+
     <div class="container">
-        <h2>Downloadable Files</h2>
-        <div class="card">
-            <span>Download RMX3997 - export 20240618.zip</span>
-            <a href="https://drive.google.com/file/d/1AI9K4lYUU4XWwlM6FMgy19DQnMhkqlrk/view?usp=drive_link">Download</a>
-        </div>
-        <div class="card">
-            <span>Download RMX3999 - export(EX01)_20240919[ProjectNo_23701].zip</span>
-            <a href="https://drive.google.com/file/d/1Jy9GlSWK1Fu1LSAtumUb2JLbso-7HEMz/view?usp=drive_link">Download</a>
-        </div>
-        <div class="card">
-            <span>Download RMX3951 - export 20240904[ProjectNo_24690].zip</span>
-            <a href="https://drive.google.com/file/d/1GEfJ2-iwtft7zuOE-3o1y89qnhbKHW2i/view?usp=drive_link">Download</a>
-        </div>
-        <div class="card">
-            <span>Download RMX3943 - export_11_15[ProjectNo_24723].zip</span>
-            <a href="https://drive.google.com/file/d/1Enol-KyPLmlvGMn9BgB6pS39yUwoPpsd/view?usp=drive_link">Download</a>
-        </div>
-        <div class="card">
-            <span>Download RMX3785 - export 20241015[ProjectNo_23671]_2.zip</span>
-            <a href="https://drive.google.com/file/d/1AOeHW9dZhdvcrowwhWGV5kq4AAd0ZSVS/view?usp=drive_link">Download</a>
-        </div>
-        <p class="attention">Attention: Please ensure your PCB/project number matches. We are not responsible for any issues in the future. All files have been thoroughly tested.</p>
+        <section id="downgrade-files">
+            <h2>Downgrade Files (Single file will charge $2)</h2>
+            <div class="card">
+                <span>Download RMX3997 - export 20240618.zip</span>
+                <a href="https://drive.google.com/file/d/1AI9K4lYUU4XWwlM6FMgy19DQnMhkqlrk/view?usp=drive_link">Download</a>
+            </div>
+            <div class="card">
+                <span>Download RMX3999 - export(EX01)_20240919[ProjectNo_23701].zip</span>
+                <a href="https://drive.google.com/file/d/1Jy9GlSWK1Fu1LSAtumUb2JLbso-7HEMz/view?usp=drive_link">Download</a>
+            </div>
+            <div class="card">
+                <span>Download RMX3951 - export 20240904[ProjectNo_24690].zip</span>
+                <a href="https://drive.google.com/file/d/1GEfJ2-iwtft7zuOE-3o1y89qnhbKHW2i/view?usp=drive_link">Download</a>
+            </div>
+            <div class="card">
+                <span>Download RMX3943 - export_11_15[ProjectNo_24723].zip</span>
+                <a href="https://drive.google.com/file/d/1Enol-KyPLmlvGMn9BgB6pS39yUwoPpsd/view?usp=drive_link">Download</a>
+            </div>
+            <div class="card">
+                <span>Download RMX3785 - export 20241015[ProjectNo_23671]_2.zip</span>
+                <a href="https://drive.google.com/file/d/1AOeHW9dZhdvcrowwhWGV5kq4AAd0ZSVS/view?usp=drive_link">Download</a>
+            </div>
+            <p class="attention">Attention: Please make sure your PCB/project number is the same. Any issues will not be our responsibility in the future. All files have been 100% tested.</p>
+        </section>
 
-        <h2>Driver Files</h2>
-        <div class="card">
-            <span>Download MTK Qualcomm Driver</span>
-            <a href="https://drive.google.com/file/d/1DdQ0vPIy9YUP6brCqEOtZQde_8h7W7js/view?usp=drive_link">Download</a>
-        </div>
-        <div class="card">
-            <span>Download libusb-win32-devel-filter-1.2.6.0.exe</span>
-            <a href="https://drive.google.com/file/d/1uXZyjvfGgD1Z67W9G6CPg2G1RNQX6y72/view?usp=drive_link">Download</a>
-        </div>
-        <div class="card">
-            <span>Download VC_redist.x64.exe</span>
-            <a href="https://drive.google.com/file/d/1PLA-W_Wf8vbjeqbaLaZqjWsu7bwuexBB/view?usp=drive_link">Download</a>
-        </div>
-        <div class="card">
-            <span>Download SPRD Driver</span>
-            <a href="https://drive.google.com/file/d/1alD_2tg2CLr2esRxRDv_vV22xO6goLF0/view?usp=drive_link">Download</a>
-        </div>
-        <div class="card">
-            <span>Download USB Redirector 1.9.7</span>
-            <a href="https://mega.nz/file/evgVCBTK#NJFzRbnbeWbBCwfJAiKAi6amJ_sS_0Id5eVkQtJJbbw">Download</a>
-        </div>
+        <section id="drivers">
+            <h2>Drivers</h2>
+            <div class="card">
+                <span>Download MTK Qualcomm Driver</span>
+                <a href="https://drive.google.com/file/d/1DdQ0vPIy9YUP6brCqEOtZQde_8h7W7js/view?usp=drive_link">Download</a>
+            </div>
+            <div class="card">
+                <span>Download libusb-win32-devel-filter-1.2.6.0.exe</span>
+                <a href="https://drive.google.com/file/d/1uXZyjvfGgD1Z67W9G6CPg2G1RNQX6y72/view?usp=drive_link">Download</a>
+            </div>
+            <div class="card">
+                <span>Download VC_redist.x64.exe</span>
+                <a href="https://drive.google.com/file/d/1PLA-W_Wf8vbjeqbaLaZqjWsu7bwuexBB/view?usp=drive_link">Download</a>
+            </div>
+            <div class="card">
+                <span>Download SPRD Driver</span>
+                <a href="https://drive.google.com/file/d/1alD_2tg2CLr2esRxRDv_vV22xO6goLF0/view?usp=drive_link">Download</a>
+            </div>
+            <div class="card">
+                <span>Download USB Redirector 1.9.7</span>
+                <a href="https://mega.nz/file/evgVCBTK#NJFzRbnbeWbBCwfJAiKAi6amJ_sS_0Id5eVkQtJJbbw">Download</a>
+            </div>
+        </section>
 
-        <h2>Honor Tools</h2>
-        <div class="card">
-            <span>Download Honor FRP Tool</span>
-            <a href="https://drive.google.com/file/d/1FWnu3IvZF-dD5WYAqE17Q9gdG6BBuiJN/view?usp=drive_link">Download</a>
-        </div>
-        <div class="card">
-            <span>Download Special Tool VIP</span>
-            <a href="https://drive.google.com/file/d/1cUq6Lt_Y2o1yIN9xZ6rBKLHjkhbOgen_/view?usp=drive_link">Download</a>
-        </div>
+        <section id="honor-tools">
+            <h2>Honor Tools</h2>
+            <div class="card">
+                <span>Download Honor FRP Tool</span>
+                <a href="https://drive.google.com/file/d/1FWnu3IvZF-dD5WYAqE17Q9gdG6BBuiJN/view?usp=drive_link">Download</a>
+            </div>
+            <div class="card">
+                <span>Download Special Tool VIP</span>
+                <a href="https://drive.google.com/file/d/1cUq6Lt_Y2o1yIN9xZ6rBKLHjkhbOgen_/view?usp=drive_link">Download</a>
+            </div>
+        </section>
 
-        <h2>Tool Rental</h2>
-        <ul>
-            <li>UnlockTool</li>
-            <li>Pandora</li>
-            <li>TSM</li>
-            <li>Griffin</li>
-            <li>DFT</li>
-            <li>Sigma</li>
-            <li>CF Tool</li>
-        </ul>
-        <p>For any rental tool, please contact us directly via WhatsApp: <a href="https://wa.me/60178040403" class="whatsapp-button">Chat with us on WhatsApp</a></p>
-
-        <p>We will continue to add more files and resources here for your convenience.</p>
+        <section id="tool-rental">
+            <h2>Tool Rental</h2>
+            <ul>
+                <li>UnlockTool</li>
+                <li>Pandora</li>
+                <li>TSM</li>
+                <li>Griffin</li>
+                <li>DFT</li>
+                <li>Sigma</li>
+                <li>CF Tool</li>
+            </ul>
+            <p>For any rental tool, please contact us directly via WhatsApp: <a href="https://wa.me/60178040403" class="whatsapp-button">Chat with us on WhatsApp</a></p>
+        </section>
     </div>
 
     <footer>
-        <p>&copy; 2025 ZuuCaster IT Solutions. All rights reserved.</p> <!-- Changed year to 2025 -->
+        <p>&copy; 2025 ZuuCaster IT Solutions. All rights reserved.</p>
     </footer>
 </body>
 </html>
