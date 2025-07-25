@@ -110,6 +110,8 @@
             z-index: 1000;
             padding: 20px;
             text-align: center;
+            width: 90%; /* Responsive width */
+            max-width: 400px; /* Max width for larger screens */
         }
         .popup h2 {
             margin: 0 0 10px;
@@ -129,6 +131,24 @@
         }
         .popup button:hover {
             background-color: #0056b3;
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
+            .card {
+                flex-direction: column; /* Stack card elements on smaller screens */
+                align-items: flex-start; /* Align items to the start */
+            }
+            .card a {
+                margin-top: 10px; /* Add space between text and button */
+            }
         }
     </style>
 </head>
