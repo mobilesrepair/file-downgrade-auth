@@ -1,155 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>File Download Tool</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Download Center</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 20px;
+            margin: 20px;
+            background-color: #f9f9f9;
+            color: #333;
         }
-        header {
-            background: #007bff;
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
+        h1, h2 {
+            color: #0056b3;
         }
-        h1 {
-            margin: 0;
-        }
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
+        .section {
             background: #fff;
-            padding: 20px;
+            padding: 15px 20px;
+            margin-bottom: 25px;
             border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 8px rgba(0,0,0,0.1);
         }
-        h2 {
-            color: #007bff;
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        li {
+            margin-bottom: 10px;
         }
         a {
-            display: block;
-            margin: 10px 0;
-            padding: 10px;
-            background: #007bff;
-            color: #fff;
+            color: #007bff;
             text-decoration: none;
-            border-radius: 5px;
-            transition: background 0.3s;
         }
         a:hover {
-            background: #0056b3;
+            text-decoration: underline;
         }
-        .alert {
-            background: #ffcc00;
-            padding: 10px;
+        .note {
+            background-color: #fff3cd;
+            border: 1px solid #ffeeba;
+            padding: 10px 15px;
             border-radius: 5px;
-            margin: 20px 0;
-        }
-        footer {
-            text-align: center;
-            margin-top: 20px;
-            font-size: 0.9em;
+            margin-bottom: 20px;
+            color: #856404;
         }
         .whatsapp-link {
-            color: #25D366;
+            display: inline-block;
+            margin-top: 10px;
+            background-color: #25d366;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
             font-weight: bold;
         }
-        /* Pop-up Styles */
-        .popup {
-            display: none;
-            position: fixed;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.7);
-            justify-content: center;
-            align-items: center;
-            z-index: 1000;
-        }
-        .popup-content {
-            background: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            text-align: center;
-            width: 300px;
-        }
-        .close-btn {
-            background: #ff0000;
-            color: #fff;
-            border: none;
-            padding: 5px 10px;
-            border-radius: 5px;
-            cursor: pointer;
-            margin-top: 10px;
+        .whatsapp-link:hover {
+            background-color: #1ebe57;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>File Download Tool</h1>
-    </header>
 
-    <div class="container">
-        <h2>Downgrade File (Single file will charge $2)</h2>
-        <a href="https://drive.google.com/file/d/1AI9K4lYUU4XWwlM6FMgy19DQnMhkqlrk/view?usp=drive_link">RMX3997export 20240618.zip</a>
-        <a href="https://drive.google.com/file/d/1Jy9GlSWK1Fu1LSAtumUb2JLbso-7HEMz/view?usp=drive_link">RMX3999export(EX01)_20240919[ProjectNo_23701].zip</a>
-        <a href="https://drive.google.com/file/d/1GEfJ2-iwtft7zuOE-3o1y89qnhbKHW2i/view?usp=drive_link">RMX3951export 20240904[ProjectNo_24690].zip</a>
-        <a href="https://drive.google.com/file/d/1Enol-KyPLmlvGMn9BgB6pS39yUwoPpsd/view?usp=drive_link">RMX3943export_11_15[ProjectNo_24723].zip</a>
-        <a href="https://drive.google.com/file/d/1AOeHW9dZhdvcrowwhWGV5kq4AAd0ZSVS/view?usp=drive_link">RMX3785export 20241015[ProjectNo_23671]_2.zip</a>
+    <h1>Download Center</h1>
 
-        <div class="alert">
-            <strong>Attention:</strong> Please make sure your PCB/project number is the same. Any issues will not be our responsibility in the future. All files were 100% tested.
-        </div>
+    <div class="note">
+        <strong>Attention:</strong> Please make sure your PCB/project number matches. We are not responsible for any issues in the future. All files are 100% tested.<br />
+        <strong>Downgrade files:</strong> Single file download charge is $2.
+    </div>
 
+    <div class="section">
+        <h2>Downgrade Files</h2>
+        <ul>
+            <li><a href="https://drive.google.com/file/d/1AI9K4lYUU4XWwlM6FMgy19DQnMhkqlrk/view?usp=drive_link" target="_blank">RMX3997export 20240618.zip</a></li>
+            <li><a href="https://drive.google.com/file/d/1Jy9GlSWK1Fu1LSAtumUb2JLbso-7HEMz/view?usp=drive_link" target="_blank">RMX3999export(EX01)_20240919[ProjectNo_23701].zip</a></li>
+            <li><a href="https://drive.google.com/file/d/1GEfJ2-iwtft7zuOE-3o1y89qnhbKHW2i/view?usp=drive_link" target="_blank">RMX3951export 20240904[ProjectNo_24690].zip</a></li>
+            <li><a href="https://drive.google.com/file/d/1Enol-KyPLmlvGMn9BgB6pS39yUwoPpsd/view?usp=drive_link" target="_blank">RMX3943export_11_15[ProjectNo_24723].zip</a></li>
+            <li><a href="https://drive.google.com/file/d/1AOeHW9dZhdvcrowwhWGV5kq4AAd0ZSVS/view?usp=drive_link" target="_blank">RMX3785export 20241015[ProjectNo_23671]_2.zip</a></li>
+        </ul>
+    </div>
+
+    <div class="section">
         <h2>Drivers</h2>
-        <a href="https://drive.google.com/file/d/1DdQ0vPIy9YUP6brCqEOtZQde_8h7W7js/view?usp=drive_link">MTK Qualcom</a>
-        <a href="https://drive.google.com/file/d/1uXZyjvfGgD1Z67W9G6CPg2G1RNQX6y72/view?usp=drive_link">libusb-win32-devel-filter-1.2.6.0.exe</a>
-        <a href="https://drive.google.com/file/d/1PLA-W_Wf8vbjeqbaLaZqjWsu7bwuexBB/view?usp=drive_link">VC_redist.x64.exe</a>
-        <a href="https://drive.google.com/file/d/1alD_2tg2CLr2esRxRDv_vV22xO6goLF0/view?usp=drive_link">SPRD Driver</a>
-        <a href="https://mega.nz/file/evgVCBTK#NJFzRbnbeWbBCwfJAiKAi6amJ_sS_0Id5eVkQtJJbbw">USB Redirector 1.9.7</a>
-        <a href="https://drive.google.com/file/d/1J2NCR-TQBWcMTv0d4oFDBvTLBcWJPBws/view?usp=sharing">Huawei driver 1.0</a>
+        <ul>
+            <li><a href="https://drive.google.com/file/d/1DdQ0vPIy9YUP6brCqEOtZQde_8h7W7js/view?usp=drive_link" target="_blank">MTK Qualcom</a></li>
+            <li><a href="https://drive.google.com/file/d/1uXZyjvfGgD1Z67W9G6CPg2G1RNQX6y72/view?usp=drive_link" target="_blank">libusb-win32-devel-filter-1.2.6.0.exe</a></li>
+            <li><a href="https://drive.google.com/file/d/1PLA-W_Wf8vbjeqbaLaZqjWsu7bwuexBB/view?usp=drive_link" target="_blank">VC_redist.x64.exe</a></li>
+            <li><a href="https://drive.google.com/file/d/1alD_2tg2CLr2esRxRDv_vV22xO6goLF0/view?usp=drive_link" target="_blank">SPRD Driver</a></li>
+            <li><a href="https://mega.nz/file/evgVCBTK#NJFzRbnbeWbBCwfJAiKAi6amJ_sS_0Id5eVkQtJJbbw" target="_blank">USB Redirector 1.9.7</a></li>
+            <li><a href="https://drive.google.com/file/d/1J2NCR-TQBWcMTv0d4oFDBvTLBcWJPBws/view?usp=sharing" target="_blank">Huawei driver 1.0</a></li>
+        </ul>
+    </div>
 
+    <div class="section">
         <h2>Software</h2>
-        <a href="https://drive.google.com/file/d/1WqDhfnQ7cuwjDV4fnIOye7mL28xIzHOF/view?usp=drive_link">Iremoval 5.0</a>
-        <a href="https://drive.google.com/file/d/1FWnu3IvZF-dD5WYAqE17Q9gdG6BBuiJN/view?usp=drive_link">Honor FRP Tool</a>
-        <a href="https://drive.google.com/file/d/1-_u9651slDsXeAjFvVpcCzHGPYO2m2FU/view?usp=drive_link">Special Tool VIP</a>
+        <ul>
+            <li><a href="https://drive.google.com/file/d/1lQXB3qtQNClFDyjbC1Sim9zLTp2pYM6W/view?usp=drive_link" target="_blank">usb redirector 2.3</a></li>
+            <li><a href="https://drive.google.com/file/d/1WqDhfnQ7cuwjDV4fnIOye7mL28xIzHOF/view?usp=drive_link" target="_blank">Iremoval 5.0</a></li>
+            <li><a href="https://drive.google.com/file/d/1FWnu3IvZF-dD5WYAqE17Q9gdG6BBuiJN/view?usp=drive_link" target="_blank">honor frp tool</a></li>
+            <li><a href="https://drive.google.com/file/d/1-_u9651slDsXeAjFvVpcCzHGPYO2m2FU/view?usp=drive_link" target="_blank">special tool VIP</a></li>
+        </ul>
+    </div>
 
+    <div class="section">
         <h2>Tool Rental</h2>
-        <a href="https://drive.google.com/file/d/1ub3uUAIYhRqNCx7pAkX4QHNvxT_zjDYl/view?usp=sharing">UnlockTool</a>
-        <p>For any rental tool, please contact via WhatsApp: <a class="whatsapp-link" href="https://wa.me/60178040403">+60178040403</a></p>
+        <ul>
+            <li><a href="https://drive.google.com/file/d/1ub3uUAIYhRqNCx7pAkX4QHNvxT_zjDYl/view?usp=sharing" target="_blank">UNLOCKTOOL</a></li>
+            <li>AMT TOOL</li>
+            <li>PANDORA</li>
+            <li>TSM</li>
+            <li>GRIFFIN</li>
+            <li>DFT</li>
+            <li>SIGMA</li>
+            <li>CF TOOL</li>
+        </ul>
+        <a href="https://wa.me/60178040403" target="_blank" class="whatsapp-link">Contact via WhatsApp for Rental Tools</a>
     </div>
 
-    <footer>
-        &copy; 2023 Your Company Name. All rights reserved.
-    </footer>
-
-    <!-- Pop-up Advertisement -->
-    <div class="popup" id="popup">
-        <div class="popup-content">
-            <h2>NEW SERVICE - IREMOVAL TOOL</h2>
-            <p>Register your SN with ZUU CASTER!</p>
-            <a class="whatsapp-link" href="https://wa.me/60178040403">Contact us on WhatsApp</a>
-            <button class="close-btn" onclick="closePopup()">Close</button>
-        </div>
+    <div class="section">
+        <h2>Future Files</h2>
+        <p>Space reserved for adding new files in the future.</p>
     </div>
 
-    <script>
-        // Show the pop-up when the page loads
-        window.onload = function() {
-            document.getElementById('popup').style.display = 'flex';
-        };
-
-        // Function to close the pop-up
-        function closePopup() {
-            document.getElementById('popup').style.display = 'none';
-        }
-    </script>
 </body>
 </html>
